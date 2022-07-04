@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Pro Pc Store</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">PRO PC STORE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                        <a class="nav-link" href="about.html">ACERCA</a>
+                        <a class="nav-link" href="build.html">ARMAR</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main cards -->
+    <template id="template-card">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top p-4" src="" alt="">
+                <div class="card-body">
+                    <h5>Aqui ira el titulo</h5>
+                    <p>Aqui ira el precio</p>
+                    <button class="btn btn-dark">Comprar ahora</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- tabla de productos -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">articulo</th>
+                <th scope="col">cantidad</th>
+                <th scope="col">accion</th>
+                <th scope="col">total</th>
+            </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+            <tr id="footer">
+                <th scope="row" colspan="5">Su carrito esta vacio, empiece a hacer sus compras!</th>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- al usar template el contenido no se mostrara al usuario hasta que lo decida -->
+    <!-- template principal -->
+    <main class="container">
+        <div class="row" id="cards"></div>
+    </main>
+    <!-- template footer -->
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total de productos</th>
+        <td>30</td>
+        <td>
+            <button class="btn btn-secondary btn-sm" id="vaciar-carrito">Vaciar el carrito</button>
+            <button class="btn btn-primary btn-sm" id="comprarProductos">Comprar productos</button>
+        </td>
+        <td class="fw-bold"><span>5000</span></td>
+    </template>
+
+    <!-- template carrito de compras -->
+    <template id="template-carrito">
+        <tr>
+            <th scope="row">id</th>
+            <td>pc gamer</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm">+</button>
+                <button class="btn btn-danger btn-sm">-</button>
+            </td>
+            <td>$ <span>700</span></td>
+        </tr>
+    </template>
+    <!-- template de finalizar compras -->
+    <template id="template-comprar">
+        <tr>
+            <th scope="row">Su Compra</th>
+            <td>pc gamer</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm">+</button>
+                <button class="btn btn-danger btn-sm">-</button>
+            </td>
+            <td>$ <span>700</span></td>
+        </tr>
+    </template>
+    <footer></footer>
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <!-- sweet alert script -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../scripts/app.js"></script>
+    <!-- toastify script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

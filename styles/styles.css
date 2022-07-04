@@ -1,0 +1,104 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&family=Space+Mono&display=swap');
+
+/* custom properties */
+:root {
+    /* colors */
+    --white: #e7ecef;
+    --black: #272932;
+    --main: #0f7173;
+    --secondary: #f05d5e;
+    /* fonts */
+    --title: 'Poppins', sans-serif;
+    --text: 'Space Mono', monospace;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* globals */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--title);
+}
+
+p,
+a,
+span {
+    font-family: var(--text);
+}
+
+
+/* main */
+main {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    text-align: center;
+    padding: 1em 2em;
+}
+
+/* bootstrap cards */
+.card {
+    margin: 1em auto;
+}
+
+.card img {
+    width: 12rem;
+}
+
+.cart-width {
+    width: 18rem;
+}
+
+.main {
+    max-width: 120rem;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--black);
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+    flex-basis: 80%;
+    color: var(--white);
+}
+
+.about__title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.about__text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    letter-spacing: .2em;
+}
+.about__image {
+    height: 100%;
+    width: 100%;
+    background-image: url(../public/assets/images/rgb3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

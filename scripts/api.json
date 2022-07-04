@@ -1,0 +1,55 @@
+[{
+        "precio": 2500,
+        "id": 1,
+        "titulo": "Entry Level",
+        "imagenUrl": "./assets/icons/desktop1.png"
+    },
+    {
+        "precio": 3800,
+        "id": 2,
+        "titulo": "Cool Stream",
+        "imagenUrl": "./assets/icons/desktop2.png"
+    },
+    {
+        "precio": 4200,
+        "id": 3,
+        "titulo": "Excel Core",
+        "imagenUrl": "./assets/icons/desktop3.png"
+    },
+    {
+        "precio": 5000,
+        "id": 4,
+        "titulo": "Extreme Gamer",
+        "imagenUrl": "./assets/icons/desktop4.png"
+    },
+    {
+        "precio": 6200,
+        "id": 5,
+        "titulo": "Dynamic Power",
+        "imagenUrl": "./assets/icons/desktop5.png"
+    },
+    {
+        "precio": 9000,
+        "id": 6,
+        "titulo": "Redux Frames",
+        "imagenUrl": "./assets/icons/desktop6.png"
+    },
+    {
+        "precio": 6550,
+        "id": 7,
+        "titulo": "Omnio Tech",
+        "imagenUrl": "./assets/icons/desktop7.png"
+    },
+    {
+        "precio": 9000,
+        "id": 8,
+        "titulo": "Game Master",
+        "imagenUrl": "./assets/icons/fullPc.png"
+    },
+    {
+        "precio": 9000,
+        "id": 9,
+        "titulo": "Meta Box",
+        "imagenUrl": "./assets/icons/mouseAndKeyboard.png"
+    }
+]
